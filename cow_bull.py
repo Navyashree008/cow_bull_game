@@ -12,10 +12,11 @@ def random_number():
             if len(to_guess_num) == 5:
                 break
         i+=1
+   return to_guess_num
 def cow_bull():
     print("wellcome to game")
     print("we have these numbers to guess")
-    random_number()
+    to_guess_num = random_number()
     for i in range(0,10):
         guess = int(input("enter number:-"))
         position = int(input("enter the position b/w 1 to 5:-"))
