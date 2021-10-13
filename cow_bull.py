@@ -15,10 +15,10 @@ def random_number():
    return to_guess_num
 def cow_bull():
     print("wellcome to game")
-    print("we have these numbers to guess")
+#     print("we have these numbers to guess")
     to_guess_num = random_number()
     for i in range(0,10):
-        guess = int(input("enter number:-"))
+        guess = int(input("enter guess number:-"))
         position = int(input("enter the position b/w 1 to 5:-"))
         if guess in reuse_list:
             reuse_list.remove(guess)
